@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import CTA from "../components/CTA.astro";
+import Hero from "../components/Hero.astro";
+import Newsletter from "../components/Newsletter.astro";
+import Social from "../components/Social.astro";
+import Header from "../components/Header.vue";
+import Sermons from "../components/Sermons.astro"
+import Left from "../components/Left.astro";
+import PrayerForm from "../components/PrayerForm.astro";
+import Give from "../components/Give.astro"
+---
+
+<Layout title="Welcome to Astro.">
+  <Header client:load/>
+  <Hero />
+  <Sermons />
+  <CTA />
+  <Social />
+  <Give />
+  <PrayerForm />
+  <Newsletter />
+  <Footer />
+</Layout>
